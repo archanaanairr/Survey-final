@@ -1,17 +1,23 @@
 server:
-  port : 9091
-spring :
+  port: 9091
+
+spring:
   application:
     name: SurveyMicro
 
-  dataSource:
+  datasource:
     url: jdbc:mysql://localhost:3306/sicet
     username: root
     password: pass@word1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-
   jpa:
     hibernate:
       ddl-auto: update
-      show-sql: true
+    show-sql: true
+
+logging:
+  level:
+    root: DEBUG
+    org.springframework: DEBUG
+    org.hibernate: DEBUG

@@ -8,7 +8,8 @@ import java.util.Optional;
 
 public interface SurveyRepo extends JpaRepository<Survey,Long> {
 
-List<Survey> findBySetname(String setname);
+List<Survey> findBySetName(String setname);
 
 
+    Survey findBySurveyid(Long surveyid);
 }

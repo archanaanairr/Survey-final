@@ -1,6 +1,6 @@
 package com.pilotproject.SurveyMicro.model;
 
-public enum Status {
+public enum Statuss {
     SURVEY_INITIATED,
     SURVEY_COMPLETED,
     SURVEY_EXPIRED

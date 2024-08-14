@@ -9,15 +9,14 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Survey {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long surveyid;
-    private String setname;
+    private String setName;
     private String companyname;
     private String domain;
-    public Status status;
-
-
+    @Enumerated(EnumType.STRING)
+    private Statuss statuss;
+//    public Status status;
 }
